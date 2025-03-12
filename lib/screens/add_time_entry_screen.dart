@@ -40,7 +40,6 @@ class _AddTimeEntryScreenState extends State<AddTimeEntryScreen> {
             Form(
               key: _formKey,
               child: Column(
-                spacing: 20,
                 children: <Widget>[
                   //dropdown project
                   Consumer<ProjectProvider>(
