@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:time_tracker/providers/time_entry_provider.dart';
+import '../providers/time_entry_provider.dart';
 
 class TimeEntryScreen extends StatelessWidget {
   const TimeEntryScreen({super.key});

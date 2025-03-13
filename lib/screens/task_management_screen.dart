@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:time_tracker/providers/task_provider.dart';
-import 'package:time_tracker/widgets/add_task_dialog.dart';
+import '../providers/task_provider.dart';
+import '../widgets/add_task_dialog.dart';
 
 class TaskManagementScreen extends StatelessWidget {
   @override

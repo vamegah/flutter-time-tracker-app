@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:time_tracker/providers/project_provider.dart';
-import 'package:time_tracker/widgets/add_project_dialog.dart';
+import '../providers/project_provider.dart';
+import '../widgets/add_project_dialog.dart';
 
 class ProjectManagementScreen extends StatelessWidget {
   @override

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:provider/provider.dart';
-import 'package:time_tracker/providers/project_provider.dart';
-import 'package:time_tracker/providers/task_provider.dart';
-import 'package:time_tracker/providers/time_entry_provider.dart';
-import 'package:time_tracker/screens/home_screen.dart';
-import 'package:time_tracker/screens/project_management_screen.dart';
-import 'package:time_tracker/screens/task_management_screen.dart';
-import 'package:time_tracker/screens/time_entry_screen.dart';
-// import 'package:time_tracker/screens/time_entry_screen.dart';
+import '../providers/project_provider.dart';
+import '../providers/task_provider.dart';
+import '../providers/time_entry_provider.dart';
+import '../screens/home_screen.dart';
+import '../screens/project_management_screen.dart';
+import '../screens/task_management_screen.dart';
+import '../screens/time_entry_screen.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:time_tracker/models/project.dart';
-import 'package:time_tracker/models/task.dart';
-import 'package:time_tracker/models/time_entry.dart';
-import 'package:time_tracker/providers/project_provider.dart';
-import 'package:time_tracker/providers/task_provider.dart';
-import 'package:time_tracker/providers/time_entry_provider.dart';
-import 'package:time_tracker/widgets/add_project_dialog.dart';
-import 'package:time_tracker/widgets/add_task_dialog.dart';
+import '../models/project.dart';
+import '../models/task.dart';
+import '../models/time_entry.dart';
+import '../providers/project_provider.dart';
+import '../providers/task_provider.dart';
+import '../providers/time_entry_provider.dart';
+import '../widgets/add_project_dialog.dart';
+import '../widgets/add_task_dialog.dart';
 
 class AddTimeEntryScreen extends StatefulWidget {
   @override
