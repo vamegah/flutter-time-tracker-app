@@ -23,7 +23,6 @@ class _AddTimeEntryScreenState extends State<AddTimeEntryScreen> {
   DateTime _selectedDate = DateTime.now();
   String notes = '';
 
-  // List<String> _dropdown
 
   @override
   Widget build(BuildContext context) {

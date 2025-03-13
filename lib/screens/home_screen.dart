@@ -125,7 +125,6 @@ class _HomeScreenState extends State<HomeScreen>
                   style: TextStyle(
                     color: Colors.grey[400],
                     fontSize: 18,
-                    // fontWeight: FontWeight.bold,
                   ),
                 ),
               ],
@@ -164,6 +163,12 @@ class _HomeScreenState extends State<HomeScreen>
                   subtitle: Text(
                     '\nTotal Time: ${timeEntry.totalTime} hours \nDate: ${formattedDate} \nNote: ${timeEntry.notes}',
                   ),
+                  trailing: IconButton(
+                    icon: Icon(Icons.delete, color: Colors.red),
+                    onPressed: () {
+                        provider.deleteTimeEntry(timeEntry.id);
+                    },
+                ),
 
                   onTap: () {
                     Navigator.pushNamed(
@@ -219,7 +224,6 @@ class _HomeScreenState extends State<HomeScreen>
                   style: TextStyle(
                     color: Colors.grey[400],
                     fontSize: 18,
-                    // fontWeight: FontWeight.bold,
                   ),
                 ),
               ],
@@ -258,16 +262,18 @@ class _HomeScreenState extends State<HomeScreen>
                         String formattedDate = DateFormat(
                           'MMM dd, yyyy',
                         ).format(timeEntry.date);
-                        return Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 2),
-                          child: Text(
-                            '- ${getTaskById(context, timeEntry.taskId)}: ${timeEntry.totalTime} hours (${formattedDate})',
-                          ),
+                        return ListTile(
+                            title: Text(
+                                '- ${getTaskById(context, timeEntry.taskId)}: ${timeEntry.totalTime} hours (${formattedDate})',
+                                ),
+                                
+                                trailing: IconButton(
+                                    icon: Icon(Icons.delete, color: Colors.red),
+                                    onPressed: () {
+                                       provider.deleteTimeEntry(timeEntry.id);
+                                        },
+                                    ),
                         );
-                        // subtitle: Text(
-                        //   '${DateFormat('MMM dd, yyyy').format(timeEntry.date)} - Notes: ${timeEntry.notes}',
-                        // ),
-                        // );
                       },
                     ),
                   ],

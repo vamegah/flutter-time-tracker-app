@@ -8,14 +8,7 @@ class TimeEntryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Map<String, dynamic> entry = ModalRoute.of(context)?.settings.arguments as Map<String,dynamic>;
-    // final Map<String, dynamic> entry = {
-    //   'id': '1',
-    //   'projectName': 'Project Alpha',
-    //   'taskName': 'Task A',
-    //   'totalTime': 7.5,
-    //   'date': 'Mar 09, 2025',
-    //   'notes': 'Hola Flutter',
-    // };
+    
     return Scaffold(
       appBar: AppBar(
         title: Text('Time Entry'),
